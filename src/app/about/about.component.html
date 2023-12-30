@@ -1,0 +1,45 @@
+<div class="container-xxl pt-5">
+    <div class="container p-0">
+        <div class="mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-3 text-center">About Us</h1>
+            <h6>Mission: </h6>
+            <p>
+                Connecting you with your perfect property through innovative technology and personalized service.
+            </p>
+            <h6 class="text-end">Vision: </h6>
+            <p class="text-end">
+                Pioneering an innovative, simpler, and more empowering real estate journey for individuals and
+                communities alike.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Team Start -->
+<div class="container-xxl pb-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Property Agents</h1>
+            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
+                eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+        </div>
+        <div class="row g-4">
+            <div *ngFor="let a of agents" class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item rounded overflow-hidden">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="{{a.image}}" alt="">
+                        <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center p-4 mt-3">
+                        <h5 class="fw-bold mb-0">{{a.name}}</h5>
+                        <small>{{a.designation}}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
